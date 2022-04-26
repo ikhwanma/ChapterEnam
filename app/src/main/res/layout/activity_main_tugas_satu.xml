@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".tugassatu.MainTugasSatuActivity">
+
+    <EditText
+        android:id="@+id/et_berat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/berat_badan"
+        android:inputType="number"
+        android:autofillHints="weight" />
+
+    <EditText
+        android:id="@+id/et_tinggi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/tinggi_badan"
+        android:inputType="number"
+        android:autofillHints="height" />
+
+    <Button
+        android:id="@+id/btn_hitung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hitung_thread"/>
+
+    <Button
+        android:id="@+id/btn_hitung_handler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hitung_thread_dan_handler"/>
+
+    <TextView
+        android:id="@+id/tv_thread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="@string/thread"
+        android:textSize="18sp"
+        />
+    <TextView
+        android:id="@+id/tv_handler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/thread_dan_handler"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        />
+
+</LinearLayout>
