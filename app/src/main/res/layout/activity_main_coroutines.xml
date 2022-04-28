@@ -8,11 +8,35 @@
     android:padding="20dp"
     tools:context=".coroutines.MainCoroutinesActivity">
 
+    <EditText
+        android:id="@+id/et_berat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/berat_badan"
+        android:inputType="number"
+        android:autofillHints="weight" />
+
+    <EditText
+        android:id="@+id/et_tinggi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/tinggi_badan"
+        android:inputType="number"
+        android:autofillHints="height" />
+
+    <Button
+        android:id="@+id/btn_hitung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hitung"/>
+
     <TextView
-        android:id="@+id/tv_nama"
+        android:id="@+id/tv_hasil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
-        android:textSize="18sp" />
+        android:text=""
+        android:textSize="18sp"
+        />
 
 </LinearLayout>

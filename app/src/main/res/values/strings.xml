@@ -14,4 +14,6 @@
     <string name="judul_film">Judul Film</string>
     <string name="tanggal_film">Tanggal Film</string>
     <string name="nama_sutradara">Nama Sutradara</string>
+    <string name="play">Play</string>
+    <string name="stop">Stop</string>
 </resources>
