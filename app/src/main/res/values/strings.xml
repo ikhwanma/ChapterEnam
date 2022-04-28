@@ -4,10 +4,14 @@
     <string name="nama">Nama</string>
     <string name="tahun">Tahun</string>
     <string name="hitung">Hitung</string>
-    <string name="berat_badan">Berat Badan</string>
-    <string name="tinggi_badan">Tinggi Badan</string>
+    <string name="berat_badan">Berat Badan (kg)</string>
+    <string name="tinggi_badan">Tinggi Badan (cm)</string>
     <string name="hitung_thread">Hitung(Thread)</string>
     <string name="hitung_thread_dan_handler">Hitung(Thread dan Handler)</string>
     <string name="thread">Thread :</string>
     <string name="thread_dan_handler">Thread dan Handler :</string>
+    <string name="image">Image</string>
+    <string name="judul_film">Judul Film</string>
+    <string name="tanggal_film">Tanggal Film</string>
+    <string name="nama_sutradara">Nama Sutradara</string>
 </resources>
