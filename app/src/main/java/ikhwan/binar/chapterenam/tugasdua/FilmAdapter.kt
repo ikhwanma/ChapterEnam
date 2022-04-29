@@ -36,10 +36,6 @@ class FilmAdapter(
     }
 
     override fun getItemCount(): Int {
-        if(listFilm == null){
-            return 0
-        }else{
-            return listFilm.size
-        }
+        return listFilm.size
     }
 }

@@ -16,4 +16,7 @@
     <string name="nama_sutradara">Nama Sutradara</string>
     <string name="play">Play</string>
     <string name="stop">Stop</string>
+    <string name="masukkan_panjang">Masukkan Panjang</string>
+    <string name="masukkan_lebar">Masukkan Lebar</string>
+    <string name="hitung_luas">Hitung Luas</string>
 </resources>

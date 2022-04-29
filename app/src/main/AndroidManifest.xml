@@ -13,8 +13,18 @@
         android:theme="@style/Theme.ChapterEnam"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".receiver.MainReceiverActivity"
+            android:name=".designpattern.mvpsederhana.view.MainImtActivity"
             android:exported="true" >
+
+        </activity>
+        <activity
+            android:name=".designpattern.mvpsederhana.view.MainMvpSederhanaActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".designpattern.mvp.view.MainMvpActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,16 +32,17 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".receiver.MainReceiverActivity"
+            android:exported="true" />
+        <activity
             android:name=".service.MainServiceActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".tugasdua.MainTugasDuaActivity"
             android:exported="true" />
         <activity
             android:name=".coroutines.MainCoroutinesActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".asynctask.MainAsyncTaskActivity"
             android:exported="true" />
@@ -52,7 +63,8 @@
             android:exported="true" />
 
         <service android:name=".service.ServicePlayer" />
-        <receiver android:name=".receiver.AirplaneModeReceiver"/>
+
+        <receiver android:name=".receiver.AirplaneModeReceiver" />
     </application>
 
 </manifest>
