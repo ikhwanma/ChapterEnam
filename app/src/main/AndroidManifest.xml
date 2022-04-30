@@ -13,13 +13,18 @@
         android:theme="@style/Theme.ChapterEnam"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".tugastiga.view.MainTugasTigaActivity"
+            android:name=".designpatternmvvm.view.MainMvvmActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".tugastiga.view.MainTugasTigaActivity"
+            android:exported="true">
+
         </activity>
         <activity
             android:name=".designpattern.mvp.view.DetailMvpActivity"
@@ -32,9 +37,7 @@
             android:exported="true" />
         <activity
             android:name=".designpattern.mvp.view.MainMvpActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".receiver.MainReceiverActivity"
             android:exported="true" />
