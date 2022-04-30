@@ -21,4 +21,7 @@
     <string name="hitung_luas">Hitung Luas</string>
     <string name="nama_author">Nama Author</string>
     <string name="deskripsi_film">Deskripsi Film</string>
+    <string name="capital">Capital</string>
+    <string name="population">Population</string>
+    <string name="region">Region</string>
 </resources>
