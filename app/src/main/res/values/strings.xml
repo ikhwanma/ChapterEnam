@@ -19,4 +19,6 @@
     <string name="masukkan_panjang">Masukkan Panjang</string>
     <string name="masukkan_lebar">Masukkan Lebar</string>
     <string name="hitung_luas">Hitung Luas</string>
+    <string name="nama_author">Nama Author</string>
+    <string name="deskripsi_film">Deskripsi Film</string>
 </resources>

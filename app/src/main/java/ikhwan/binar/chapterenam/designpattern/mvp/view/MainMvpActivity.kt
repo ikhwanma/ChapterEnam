@@ -1,5 +1,6 @@
 package ikhwan.binar.chapterenam.designpattern.mvp.view
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -30,7 +31,9 @@ class MainMvpActivity : AppCompatActivity() , NewsView{
 
     override fun onSuccess(message: String, listNews: List<GetNewsResponseItem>) {
         rv_news.layoutManager = LinearLayoutManager(this)
-        val adapter = NewsAdapter(listNews)
+        val adapter = NewsAdapter(listNews){
+            startActivity(Intent(this, DetailMvpActivity::class.java).putExtra("id", it.id))
+        }
         rv_news.adapter = adapter
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
@@ -38,4 +41,5 @@ class MainMvpActivity : AppCompatActivity() , NewsView{
     override fun onError(message: String) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
+
 }

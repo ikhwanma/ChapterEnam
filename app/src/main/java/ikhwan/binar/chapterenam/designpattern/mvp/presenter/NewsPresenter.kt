@@ -29,4 +29,6 @@ class NewsPresenter(var newsView: NewsView) {
 
             })
     }
+
+
 }

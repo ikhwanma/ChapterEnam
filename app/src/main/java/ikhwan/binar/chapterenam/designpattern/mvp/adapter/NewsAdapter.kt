@@ -9,7 +9,7 @@ import ikhwan.binar.chapterenam.R
 import ikhwan.binar.chapterenam.designpattern.mvp.model.GetNewsResponseItem
 import kotlinx.android.synthetic.main.item_news.view.*
 
-class NewsAdapter(private val listNews : List<GetNewsResponseItem>) : RecyclerView.Adapter<NewsAdapter.ViewHolder>() {
+class NewsAdapter(private val listNews : List<GetNewsResponseItem>, val onItemClick: (GetNewsResponseItem) -> Unit) : RecyclerView.Adapter<NewsAdapter.ViewHolder>() {
     class ViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -25,6 +25,9 @@ class NewsAdapter(private val listNews : List<GetNewsResponseItem>) : RecyclerVi
             tv_title.text = data.title
             tv_author.text = data.author
             tv_tanggal.text = data.createdAt
+            rootView.setOnClickListener {
+                onItemClick(data)
+            }
             Glide.with(holder.itemView).load(data.image).into(holder.itemView.img_film)
         }
     }
