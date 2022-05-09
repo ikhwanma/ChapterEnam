@@ -24,4 +24,14 @@
     <string name="capital">Capital</string>
     <string name="population">Population</string>
     <string name="region">Region</string>
+    <string name="age">Age</string>
+    <string name="save">Save</string>
+    <string name="_0">0</string>
+    <string name="delete">Delete</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="hello">Hello,</string>
+    <string name="logout">Logout</string>
+    <string name="ini_splash">Ini Splash</string>
 </resources>

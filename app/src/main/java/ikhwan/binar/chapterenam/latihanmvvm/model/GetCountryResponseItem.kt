@@ -42,7 +42,7 @@ data class GetCountryResponseItem(
     @SerializedName("numericCode")
     val numericCode: String,
     @SerializedName("population")
-    val population: Double,
+    val population: Int,
     @SerializedName("region")
     val region: String,
     @SerializedName("regionalBlocs")

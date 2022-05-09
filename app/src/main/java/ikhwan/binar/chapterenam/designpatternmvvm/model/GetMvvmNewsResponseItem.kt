@@ -1,8 +1,11 @@
 package ikhwan.binar.chapterenam.designpatternmvvm.model
 
 
+import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
+import kotlinx.android.parcel.Parcelize
 
+@Parcelize
 data class GetMvvmNewsResponseItem(
     @SerializedName("author")
     val author: String,
@@ -16,4 +19,4 @@ data class GetMvvmNewsResponseItem(
     val image: String,
     @SerializedName("title")
     val title: String
-)
+) : Parcelable
